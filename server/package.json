@@ -11,7 +11,13 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node ./server.js",
+    "start": "node ./server.js",
+    "client": "cd.. && cd client && npm start",
+    "dev": "concurrently \"node index.js\" \"npm run client\"",
+    "clienti": "cd.. && cd client && npm install",
+    "download": "concurrently \"npm install\" \"npm run clienti\""
   },
   "author": "",
   "license": "ISC"
