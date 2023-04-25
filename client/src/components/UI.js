@@ -24,7 +24,7 @@ function UI() {
   //axios get method to get the last booking details from http://localhost:8080/api/booking
   const getLastBooking = async () => {
     try {
-      const temp = await axios.get("http://localhost:8080/api/booking");
+      const temp = await axios.get("https://ticket-server-x8vq.onrender.com/api/booking");
       setLastBooking(temp.data);
     } catch (error) {
       console.log("error in axios call", error);
@@ -68,7 +68,7 @@ function UI() {
   // axios post request to http://localhost:8080/api/booking
   const handleSubmit = async () => {
     await axios
-      .post("http://localhost:8080/api/booking", movieData)
+      .post("https://ticket-server-x8vq.onrender.com/api/booking", movieData)
       .then((res) => {
         console.log(res);
       })
