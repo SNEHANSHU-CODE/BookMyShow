@@ -21,7 +21,11 @@ function UI() {
   //lastBooking object hold and monitor get method data
   const [lastBooking, setLastBooking] = useState([]);
 
-  //axios get method to get the last booking details from http://localhost:8080/api/booking
+  /*-------------------------------make change here-------------------------------------*/
+
+  // axios get request for getting lastBooking details
+  /*change "https://ticket-server-x8vq.onrender.com/api/booking" to
+   "http://localhost:8080/api/booking" to run in localhost*/
   const getLastBooking = async () => {
     try {
       const temp = await axios.get("https://ticket-server-x8vq.onrender.com/api/booking");
@@ -65,7 +69,12 @@ function UI() {
     });
   };
 
-  // axios post request to http://localhost:8080/api/booking
+  /*-------------------------------make change here-------------------------------------*/
+  
+  // axios post request 
+  /*change "https://ticket-server-x8vq.onrender.com/api/booking" to
+   "http://localhost:8080/api/booking" to run in localhost*/
+
   const handleSubmit = async () => {
     await axios
       .post("https://ticket-server-x8vq.onrender.com/api/booking", movieData)
