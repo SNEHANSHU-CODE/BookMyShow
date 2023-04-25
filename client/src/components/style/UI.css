@@ -37,5 +37,14 @@
   .sub-heading{
     color: rgb(64, 64, 64);
   }
+
+/*content min-width*/
+.content{
+  min-width: 544px;
+}
+
+.left-side-bar{
+  min-width: 294px;
+}
   
   

@@ -70,7 +70,7 @@ function UI() {
   };
 
   /*-------------------------------make change here-------------------------------------*/
-  
+
   // axios post request 
   /*change "https://ticket-server-x8vq.onrender.com/api/booking" to
    "http://localhost:8080/api/booking" to run in localhost*/
@@ -93,7 +93,7 @@ function UI() {
         <div className="container mt-5">
           <h1 className="sub-heading text-center pb-1">Book My Show</h1>
           <div className="row main_block p-4 pb-2">
-            <div className="col-8">
+            <div className="content col-8">
               {/*Select Movie Section*/}
 
               <div className="movies p-2 m-2 pb-4">
@@ -161,7 +161,7 @@ function UI() {
                 Book Now
               </button>
             </div>
-            <div className="col-4">
+            <div className="left-side-bar col-4">
               {/*Last Booking Details*/}
 
               <div className="lastbooking p-3 m-2">
