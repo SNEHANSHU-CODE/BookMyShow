@@ -153,6 +153,7 @@ function UI() {
                         <input
                           onChange={(e) => setSeats(e, item)}
                           type="number"
+                          placeholder="0"
                           min="0"
                           max="10"
                           style={{ width: "2.8rem" }}
