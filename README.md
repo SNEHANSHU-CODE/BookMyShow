@@ -5,9 +5,10 @@ This is a full stack project on Book My Show.
 In this project I have used several Programming technologies like ReactJS, ExpressJS and MongoDB.
 
 This Project is live:
-    client : "https://bookmyshow-ja0v.onrender.com/"
-    
-    server : "https://ticket-server-x8vq.onrender.com/api/booking"
+    client :-
+    "https://bookmyshow-ja0v.onrender.com/"
+    server :-
+    "https://ticket-server-x8vq.onrender.com/api/booking"
 
 API Documentation:- https://documenter.getpostman.com/view/26813108/2s93sjW9rH#3caead2d-fc97-4bfe-a750-66dc5fbd93ea
     
