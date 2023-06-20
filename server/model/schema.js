@@ -1,5 +1,6 @@
 const { Schema } = require('mongoose');
 
+//Schema model for store the booking details in mongoDB
 const bookMovieSchema = new Schema({
     movie: Schema.Types.String,
     slot: Schema.Types.String,

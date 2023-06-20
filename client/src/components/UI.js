@@ -4,6 +4,7 @@ import { movies, slots, seats } from "./data/data";
 import "./style/UI.css";
 
 function UI() {
+
   // movieData object hold and monitor the post method data
   const [movieData, setMovieData] = useState({
     movie: "",
@@ -18,8 +19,10 @@ function UI() {
     },
   });
 
+
   //lastBooking object hold and monitor get method data
   const [lastBooking, setLastBooking] = useState([]);
+
 
   /*-------------------------------make change here-------------------------------------*/
 
@@ -51,15 +54,18 @@ function UI() {
     getLastBooking();
   }, []);
 
+
   // set movie in movieData
   const setMovie = (movie) => {
     setMovieData({ ...movieData, movie: movie });
   };
 
+
   //  set time in movieData
   const setTime = (time) => {
     setMovieData({ ...movieData, slot: time });
   };
+
 
   //set seat details in movieData
   const setSeats = (value, seats) => {
@@ -68,6 +74,8 @@ function UI() {
       seats: { ...movieData.seats, [seats]: parseInt(value.target.value) },
     });
   };
+
+
 
   /*-------------------------------make change here-------------------------------------*/
 
@@ -87,9 +95,11 @@ function UI() {
     getLastBooking();
   };
 
+
   return (
     <>
       <div>
+
         <div className="container mt-5">
           <h1 className="sub-heading text-center pb-1">Book My Show</h1>
           <div className="row main_block p-4 pb-2">
@@ -220,7 +230,9 @@ function UI() {
               </div>
             </div>
           </div>
+          
         </div>
+
       </div>
     </>
   );

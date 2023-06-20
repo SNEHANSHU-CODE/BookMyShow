@@ -11,6 +11,7 @@ mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .catch(err => {
         console.log("error while connection", err)
     });
+    
 let collection_connection = mongoose.model('bookmovietickets', bookMovieSchema)
 
 
